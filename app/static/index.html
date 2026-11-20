@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document Q&A Tutor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="eyebrow">AI-901 PORTFOLIO PROJECT</div>
+      <h1>Document Q&amp;A Tutor</h1>
+      <p class="sub">Study from your own notes. Ask questions and trace every answer back to its source.</p>
+      <div id="mode" class="mode">Checking mode…</div>
+    </header>
+    <section class="panel">
+      <h2>1. Add course notes</h2>
+      <p class="hint">Upload searchable PDF or TXT notes. PDF pages are retained for citations.</p>
+      <form id="uploadForm">
+        <label class="drop" for="file"><span class="upload-icon">↑</span><strong>Choose a PDF or TXT file</strong><small>Files are processed locally in demo mode.</small></label>
+        <input id="file" type="file" accept=".pdf,.txt" required>
+        <button type="submit">Upload notes</button>
+      </form>
+      <div id="uploadStatus" class="status" aria-live="polite"></div>
+      <div id="docs" class="docs"></div>
+    </section>
+    <section class="panel">
+      <h2>2. Ask your notes</h2>
+      <form id="askForm">
+        <label class="sr" for="question">Your question</label>
+        <textarea id="question" placeholder="For example: What is supervised learning?" rows="3" required></textarea>
+        <button type="submit">Find an answer</button>
+      </form>
+      <div id="answerArea" hidden>
+        <h3>Answer</h3><div id="answer" class="answer"></div>
+        <h3>Sources</h3><div id="citations" class="citations"></div>
+      </div>
+    </section>
+    <footer>Document Q&amp;A Tutor · Grounded learning with source transparency</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
