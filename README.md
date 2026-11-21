@@ -2,9 +2,7 @@
 
 A portfolio-ready document-grounded Q&A app for AI-901 learning. Students upload PDF/TXT course notes, ask questions, and inspect clickable source citations (filename, page, and the retrieved passage).
 
-> **Important:** The default experience is a clearly labeled **LOCAL DEMO**. It uses local keyword-overlap retrieval and returns matching passages; it does **not** call an AI model. Azure mode is an integration path and will not work until you provision Azure resources, deploy a model, configure credentials, and create the search index.
 
-## Prerequisites
 
 - macOS/Linux: Python 3.10+ and `bash`
 - Windows: Python 3.10+ and Command Prompt
